@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web xmlns="http://www.jboss.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://www.jboss.com/xml/ns/javaee
+      http://www.jboss.org/j2ee/schema/jboss-web_5_1.xsd">
+   <server-instance>config-server-14</server-instance>
+   <virtual-host>host-14</virtual-host>
+   <context-root>/bd</context-root>
+</jboss-web>
