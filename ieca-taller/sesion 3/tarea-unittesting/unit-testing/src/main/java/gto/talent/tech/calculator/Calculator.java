@@ -1,0 +1,19 @@
+package gto.talent.tech.calculator;
+
+public class Calculator {
+    public short add(short a, short b){
+        return (short) (a + b);
+    }
+
+    public static short subtract(short a, short b){
+        return (short) (a - b);
+    }
+
+    public static short multiply(short a, short b){
+        return (short) (a * b);
+    }
+
+    public static short divide(short a, short b) throws ArithmeticException{
+        return (short) (a / b);
+    }
+}
