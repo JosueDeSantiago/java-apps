@@ -16,7 +16,7 @@ public class PopulateMusicData {
     }
 
     public static void generateArtists(List<Artist> artists) {
-        Artist taylor = new Artist("1", "Taylor Swift","Country");
+        Artist taylor = new Artist("1", "Taylor Swift", "Country");
         artists.add(taylor);
         artists.add(new Artist("2", "Ed Sheeran", "Pop"));
         artists.add(new Artist("3", "Adele", "Soul, Pop"));
@@ -44,40 +44,28 @@ public class PopulateMusicData {
 
     public static void generateAlbumSongs(List<List<String>> albumSongs) {
         // Album 1
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(0).add("1"); // albumId
-        albumSongs.get(0).add("1001"); // songId
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(1).add("1"); // albumId
-        albumSongs.get(1).add("1002");// songId
-        // albumSongs.add(new ArrayList<>());
-        // albumSongs.get(8).add("1"); // albumId
-        // albumSongs.get(8).add("1009"); // songId
+        List<String> album1Songs = new ArrayList<>();
+        album1Songs.add("1001");
+        album1Songs.add("1002");
+        album1Songs.add("1009");
+        albumSongs.add(album1Songs);
 
         // Album 2
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(2).add("2"); // albumId
-        albumSongs.get(2).add("1003"); // songId
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(3).add("2"); // albumId
-        albumSongs.get(3).add("1004"); // songId
+        List<String> album2Songs = new ArrayList<>();
+        album2Songs.add("1003");
+        album2Songs.add("1004");
+        albumSongs.add(album2Songs);
 
         // Album 3
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(4).add("3"); // albumId
-        albumSongs.get(4).add("1005"); // songId
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(5).add("3"); // albumId
-        albumSongs.get(5).add("1006"); // songId
+        List<String> album3Songs = new ArrayList<>();
+        album3Songs.add("1005");
+        album3Songs.add("1006");
+        albumSongs.add(album3Songs);
 
         // Album 4
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(6).add("4"); // albumId
-        albumSongs.get(6).add("1007"); // songId
-        albumSongs.add(new ArrayList<>());
-        albumSongs.get(7).add("4"); // albumId
-        albumSongs.get(7).add("1008"); // songId
+        List<String> album4Songs = new ArrayList<>();
+        album4Songs.add("1007");
+        album4Songs.add("1008");
+        albumSongs.add(album4Songs);
     }
 }
-
-

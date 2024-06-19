@@ -1,50 +1,3 @@
-// package gto.talent.tech;
-
-// import gto.talent.tech.model.Album;
-// import gto.talent.tech.model.Artist;
-// import gto.talent.tech.model.Song;
-// import gto.talent.tech.util.PopulateMusicData;
-
-// import java.util.*;
-// import java.util.function.*;
-// import java.util.stream.Collectors;
-
-// public class Main {
-//     public static void main(String[] args) {
-//         List<Artist> artists = new ArrayList<>();
-//         List<Album> albums = new ArrayList<>();
-//         List<Song> songs = new ArrayList<>();
-//         List<List<String>> albumSongs = new ArrayList<>();
-
-//         PopulateMusicData.populate(artists, songs, albums, albumSongs);
-
-//         System.out.println("Artists: " + artists.size());
-//         // TODO: Imprime toda la lista de artistas usando foreach
-
-//         System.out.println("Albums: " + albums.size());
-//         // TODO: Imprime toda la lista de albumes usando foreach
-
-//         System.out.println("Songs: " + songs.size());
-//         // TODO: Imprime toda la lista de canciones usando foreach
-
-//         System.out.println("Album Songs: " + albumSongs.size());
-//         // TODO: Imprime toda la lista de albums y canciones usando foreach
-
-//         //TODO: Challenge 1: Artistas que sean de genero Country
-
-//         //TODO: Challenge 2: Nombre de canciones cuya duracion es mayor de 200 segundos
-
-//         //TODO: Challenge 3: Id de la cancion mas corta de toda la lista
-
-//         //TODO: Challenge 4: Nombre del artista con el album de duracion mas larga
-
-//     }
-
-//     public static int parseDuration(String duration) {
-//         //TODO: Complete this method
-//         return 0;
-//     }
-// }
 package gto.talent.tech;
 
 import gto.talent.tech.model.Album;
@@ -101,12 +54,13 @@ public class Main {
         shortestSongId.ifPresent(id -> System.out.println("Shortest Song ID: " + id));
 
         // Challenge 4: Nombre del artista con el album de duracion mas larga
-        // Assuming albumSongs contains album durations as the last element in each list
-        // Otherwise, you need to update the logic based on how the album durations are stored
         Map<String, Integer> albumDurations = new HashMap<>();
         for (int i = 0; i < albumSongs.size(); i++) {
-            int totalDuration = albumSongs.get(i).subList(1, albumSongs.get(i).size()).stream()
-                    .mapToInt(Main::parseDuration)
+            List<String> songIds = albumSongs.get(i);
+            int totalDuration = songIds.stream()
+                    .map(id -> songs.stream().filter(song -> song.getId().equals(id)).findFirst().orElse(null))
+                    .filter(Objects::nonNull)
+                    .mapToInt(song -> parseDuration(song.getDuration()))
                     .sum();
             albumDurations.put(albums.get(i).getId(), totalDuration);
         }
