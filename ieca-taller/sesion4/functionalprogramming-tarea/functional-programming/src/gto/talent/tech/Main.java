@@ -50,7 +50,7 @@ public class Main {
         // Challenge 3: Id de la cancion mas corta de toda la lista
         Optional<String> shortestSongId = songs.stream()
                 .min(Comparator.comparingInt(song -> parseDuration(song.getDuration())))
-                .map(Song::getId);
+                .map(Song::getTitle);
         shortestSongId.ifPresent(id -> System.out.println("Shortest Song ID: " + id));
 
         // Challenge 4: Nombre del artista con el album de duracion mas larga
