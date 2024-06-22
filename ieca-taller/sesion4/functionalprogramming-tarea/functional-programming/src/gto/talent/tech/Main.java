@@ -6,7 +6,6 @@ import gto.talent.tech.model.Song;
 import gto.talent.tech.util.PopulateMusicData;
 
 import java.util.*;
-import java.util.function.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -51,7 +50,7 @@ public class Main {
         Optional<String> shortestSongId = songs.stream()
                 .min(Comparator.comparingInt(song -> parseDuration(song.getDuration())))
                 .map(Song::getTitle);
-        shortestSongId.ifPresent(id -> System.out.println("Shortest Song ID: " + id));
+        shortestSongId.ifPresent(id -> System.out.println("Shortest Song Name: " + id));
 
         // Challenge 4: Nombre del artista con el album de duracion mas larga
         Map<String, Integer> albumDurations = new HashMap<>();
