@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 k
 ;src/gto/talent/tech/orderprocessor/inventory/Inventory.java,a\4\a4739f437182e05a52e5a5b57295b580e35617b0
 k
@@ -9,11 +10,42 @@ h
 8src/gto/talent/tech/orderprocessor/util/QueryOrders.java,7\b\7b1d338095f4f3da857e4fbf16d1f700089abf7c
 c
 3src/gto/talent/tech/orderprocessor/order/Order.java,e\b\eb0a4a9928ba0974f878b6d45c9c2a6edf10bdd6
+=======
+M
+src/gto/talent/tech/Main.java,1\1\117242f99110aabfea7ec7c5d5a7a6f081f8f56e
+g
+7src/gto/talent/tech/threads/ExampleThreadWithClass.java,f\e\fe64b0f1ee72cd247e88620da6e9815b01752457
+d
+4src/gto/talent/tech/threads/ExampleExtendThread.java,f\a\fa78fba2ff7834375788d29d207dec35d300679b
+c
+3src/gto/talent/tech/threads/ExampleSynchronize.java,6\e\6e7d9e407ad9b9cc798f35f21588fccc43c70053
+k
+;src/gto/talent/tech/orderprocessor/inventory/Inventory.java,a\4\a4739f437182e05a52e5a5b57295b580e35617b0
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1
 z
 Jsrc/gto/talent/tech/orderprocessor/inventory/impl/ConcurrentInventory.java,4\2\4246ce5285b5fdc1af8e81bdd2c3da4a4cca3487
 v
 Fsrc/gto/talent/tech/orderprocessor/inventory/impl/SingleInventory.java,d\e\de1f7d1ed5c6a7a01b8f4a205ae928f7d4956172
 z
 Jsrc/gto/talent/tech/orderprocessor/processor/impl/ConcurrentProcessor.java,4\9\49af16918a684e005d65ae742d6bb5a318d54ed6
+<<<<<<< HEAD
 v
 Fsrc/gto/talent/tech/orderprocessor/processor/impl/SingleProcessor.java,f\d\fd5821c9638727c47a5f63a66d7d0ccc5d97117b
+=======
+k
+;src/gto/talent/tech/orderprocessor/processor/Processor.java,1\5\15dc8591d313426f815e9c43f2648301f9d71f94
+r
+Bsrc/gto/talent/tech/orderprocessor/OrdersProcessorApplication.java,d\6\d6074f28a8d68dfe5479e76d347054384be253d6
+h
+8src/gto/talent/tech/orderprocessor/util/QueryOrders.java,7\b\7b1d338095f4f3da857e4fbf16d1f700089abf7c
+v
+Fsrc/gto/talent/tech/orderprocessor/processor/impl/SingleProcessor.java,f\d\fd5821c9638727c47a5f63a66d7d0ccc5d97117b
+c
+3src/gto/talent/tech/orderprocessor/order/Order.java,e\b\eb0a4a9928ba0974f878b6d45c9c2a6edf10bdd6
+^
+.src/gto/talent/tech/threads/FutureExample.java,8\b\8bc26e729990dc93585f19c5787a2c0783b60d3e
+p
+@src/gto/talent/tech/orderprocessor/processor/impl/Processor.java,1\a\1a3612f427d8ffae888c234cf0e5cc845835a0b1
+p
+@src/gto/talent/tech/orderprocessor/inventory/impl/Inventory.java,2\1\215e98e75472d7ee25c42db525619ed083d4420e
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1

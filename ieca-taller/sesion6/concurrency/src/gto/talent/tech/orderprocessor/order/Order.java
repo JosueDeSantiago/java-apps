@@ -2,7 +2,10 @@ package gto.talent.tech.orderprocessor.order;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+<<<<<<< HEAD
 import java.util.Date;
+=======
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1
 
 public class Order {
     private final int orderId;

@@ -1,12 +1,17 @@
 package gto.talent.tech.orderprocessor;
 
 import gto.talent.tech.orderprocessor.inventory.Inventory;
+<<<<<<< HEAD
 import gto.talent.tech.orderprocessor.inventory.impl.ConcurrentInventory;
 import gto.talent.tech.orderprocessor.inventory.impl.SingleInventory;
 import gto.talent.tech.orderprocessor.order.Order;
 import gto.talent.tech.orderprocessor.processor.Processor;
 import gto.talent.tech.orderprocessor.processor.impl.ConcurrentProcessor;
 import gto.talent.tech.orderprocessor.processor.impl.SingleProcessor;
+=======
+import gto.talent.tech.orderprocessor.order.Order;
+import gto.talent.tech.orderprocessor.processor.Processor;
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -18,6 +23,7 @@ import static gto.talent.tech.orderprocessor.util.QueryOrders.*;
 public class OrdersProcessorApplication {
     public static void main(String[] args) {
         System.out.println("processing orders");
+<<<<<<< HEAD
 
         Inventory singleInventory = new SingleInventory();
         Processor singleProcessor = new SingleProcessor(singleInventory);
@@ -29,15 +35,23 @@ public class OrdersProcessorApplication {
         //queryOrders(populateOrders(singleInventory, singleProcessor));
         System.out.println("final stock product 1 " + concurrentInventory.getStock("Product1"));
         System.out.println("final stock product 2 " + concurrentInventory.getStock("Product2"));
+=======
+        Inventory inventory = new Inventory();
+        Processor processor = new Processor(inventory);
+        queryOrders(populateOrders(inventory, processor));
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1
     }
 
     private static List<Order> populateOrders(Inventory inventory, Processor processor){
         inventory.addProduct("Product1", 1000);
         inventory.addProduct("Product2", 500);
 
+<<<<<<< HEAD
         System.out.println("initial stock product 1: " + inventory.getStock("Product1"));
         System.out.println("initial stock product 2: " + inventory.getStock("Product2"));
 
+=======
+>>>>>>> 847b2127d600e79d0358dd47d3cccf355108ddb1
         List<Order> orders = new ArrayList<>(List.of(
                 new Order(1, "Product1", 30),
                 new Order(2, "Product2", 20),
